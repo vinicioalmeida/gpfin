@@ -269,7 +269,7 @@ st.markdown('''
 <div class="card">
     <div class="card-body">
         GPFin supports student participation in national quantitative finance competitions
-        and coordinates the <strong>UFRN Finance League</strong> (Liga de Investimentos da UFRN),
+        and coordinates the <a href="https://www.linkedin.com/company/ufrnliga" target="_blank" style="color:#1a3550; text-decoration:none; border-bottom:1px solid #b8973a;"><strong>UFRN Finance League</strong></a> (Liga de Investimentos da UFRN),
         a student-run investment league with weekly sessions on equity analysis, portfolio
         management, and systematic trading strategies.<br><br>
         Students affiliated with GPFin have competed in the
