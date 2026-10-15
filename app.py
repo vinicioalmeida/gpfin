@@ -278,6 +278,14 @@ st.markdown('''
         recurring forum for academic exchange within and beyond UFRN.
     </div>
     <span class="tag">Research Agendas</span><span class="tag">Inaugural Session</span>
+    <div style="margin-top:0.6rem;">
+        <span style="font-size:0.78rem; color:#6b7280;">Slides: </span>
+        <a href="#" style="font-size:0.78rem; color:#1a3550; text-decoration:none; border-bottom:1px solid #b8973a;">Vinicio Almeida ↓</a>
+        &nbsp;·&nbsp;
+        <a href="#" style="font-size:0.78rem; color:#1a3550; text-decoration:none; border-bottom:1px solid #b8973a;">Presentation 2 ↓</a>
+        &nbsp;·&nbsp;
+        <a href="#" style="font-size:0.78rem; color:#1a3550; text-decoration:none; border-bottom:1px solid #b8973a;">Presentation 3 ↓</a>
+    </div>
 </div>
 <div class="card">
     <div class="card-title">📋 EnANPAD 2026 — Divisional Activity</div>
@@ -288,6 +296,10 @@ st.markdown('''
         Presented by Vinicio Almeida · Finance Division, EnANPAD 2026
     </div>
     <span class="tag">Quantitative Trading</span><span class="tag">AI</span><span class="tag">Workshop</span>
+    <div style="margin-top:0.6rem;">
+        <span style="font-size:0.78rem; color:#6b7280;">Slides: </span>
+        <a href="#" style="font-size:0.78rem; color:#1a3550; text-decoration:none; border-bottom:1px solid #b8973a;">Workshop Slides ↓</a>
+    </div>
 </div>
 ''', unsafe_allow_html=True)
 
