@@ -280,11 +280,11 @@ st.markdown('''
     <span class="tag">Research Agendas</span><span class="tag">Inaugural Session</span>
     <div style="margin-top:0.6rem;">
         <span style="font-size:0.78rem; color:#6b7280;">Slides: </span>
-        <a href="https://raw.githubusercontent.com/vinicioalmeida/gpfin/main/eventosdocs/2026/AgendaPesquisaVinicio.pdf" target="_blank" style="font-size:0.78rem; color:#1a3550; text-decoration:none; border-bottom:1px solid #b8973a;">Vinicio Almeida ↓</a>
+        <a href="#" style="font-size:0.78rem; color:#1a3550; text-decoration:none; border-bottom:1px solid #b8973a;">Anderson Mól ↓</a>
         &nbsp;·&nbsp;
         <a href="https://raw.githubusercontent.com/vinicioalmeida/gpfin/main/eventosdocs/2026/AgendaPesquisaIsrael.pdf" target="_blank" style="font-size:0.78rem; color:#1a3550; text-decoration:none; border-bottom:1px solid #b8973a;">Israel Felipe ↓</a>
         &nbsp;·&nbsp;
-        <a href="#" style="font-size:0.78rem; color:#1a3550; text-decoration:none; border-bottom:1px solid #b8973a;">Anderson Mól ↓</a>
+        <a href="https://raw.githubusercontent.com/vinicioalmeida/gpfin/main/eventosdocs/2026/AgendaPesquisaVinicio.pdf" target="_blank" style="font-size:0.78rem; color:#1a3550; text-decoration:none; border-bottom:1px solid #b8973a;">Vinicio Almeida ↓</a>
     </div>
 </div>
 <div class="card">
