@@ -307,51 +307,6 @@ st.markdown('''
 </div>
 ''', unsafe_allow_html=True)
 
-# ── Working Papers ─────────────────────────────────────────────────────────────
-st.markdown('<div class="section-label">Working Papers</div>', unsafe_allow_html=True)
-
-papers = [
-    ("Corporate Sustainable Bonds in Brazil: Market Reactions and Spillover Effects",
-     "Almeida, Farias & Felipe",
-     "Event study on 62 green bond issuances in the Brazilian market (2015–2024). Winner of the ANBIMA Capital Markets Prize.",
-     ["Green Bonds", "Event Study", "Sustainable Finance"],
-     "https://papers.ssrn.com/sol3/papers.cfm?abstract_id=6692059"),
-    ("Volatility Scaling in Multi-Asset Portfolios: Evidence from a Systematic Risk-Targeting Strategy",
-     "Almeida & Farias",
-     "Volatility-scaled allocation strategies across multi-asset portfolios using a systematic risk-targeting approach.",
-     ["Volatility Scaling", "Portfolio Management", "Risk Targeting"],
-     "https://papers.ssrn.com/abstract=6692178"),
-    ("Investment Flows in Funds and the Economic Environment",
-     "Almeida & Lemos",
-     "Relationship between investment fund flows and economic variables using panel data models.",
-     ["Fund Flows", "Asset Allocation", "Panel Data"],
-     "https://papers.ssrn.com/sol3/papers.cfm?abstract_id=6831429"),
-]
-for title, authors, desc, tags, url in papers:
-    tag_html = " ".join(f'<span class="tag">{t}</span>' for t in tags)
-    st.markdown(f'''
-    <div class="card">
-        <div class="card-title">{title}</div>
-        <div class="card-meta">{authors}</div>
-        <div class="card-body" style="margin-bottom:0.5rem;">{desc}</div>
-        {tag_html}
-        <br><a href="{url}" target="_blank" style="font-size:0.8rem;">Download on SSRN ↗</a>
-    </div>
-    ''', unsafe_allow_html=True)
-
-# ── Publications ──────────────────────────────────────────────────────────────
-st.markdown('<div class="section-label">Publications</div>', unsafe_allow_html=True)
-st.markdown('''
-<div class="card">
-    <div class="card-body">
-        Full publication list:
-        <a href="https://scholar.google.com.br/citations?user=S-KEieUAAAAJ&hl=pt-BR" target="_blank">Google Scholar ↗</a>
-        &nbsp;·&nbsp;
-        <a href="https://ssrn.com/author=2187588" target="_blank">SSRN ↗</a>
-    </div>
-</div>
-''', unsafe_allow_html=True)
-
 # ── International Collaborations ──────────────────────────────────────────────
 st.markdown('<div class="section-label">International Collaborations</div>', unsafe_allow_html=True)
 st.markdown('''
@@ -415,7 +370,6 @@ st.markdown(f'''
 # ── Footer ────────────────────────────────────────────────────────────────────
 st.markdown('''
 <div class="footer">
-    GPFin · Finance Research Lab · PPGA/UFRN · Natal, RN · Brazil ·
-    <a href="https://vinicioalmeida.streamlit.app" style="color:#b8973a;">vinicioalmeida.streamlit.app</a>
+    GPFin · Finance Research Lab · PPGA/UFRN · Natal, RN · Brazil
 </div>
 ''', unsafe_allow_html=True)
