@@ -137,10 +137,14 @@ areas = [
      "Non-traditional financing instruments, fintech, structured products, and alternative investment strategies."),
     ("🏢", "Corporate Finance",
      "Capital structure, corporate governance, M&A, and firm valuation in emerging markets."),
+    ("💻", "Digital Health & Public Policy",
+     "Efficiency of health services, implementation and monitoring of public policies, and the role of information and innovation in healthcare management."),
     ("💹", "Equity Markets",
      "IPOs, analyst recommendations, corporate governance effects on returns, and equity market dynamics in Brazil."),
     ("🌱", "ESG & Sustainable Finance",
      "Green bonds, sustainable corporate governance, and ESG factor pricing in emerging markets."),
+    ("🏥", "Health Economics",
+     "Healthcare financing and sustainability, distributive equity, cost analysis, and economic evaluation of public health policies."),
     ("🏦", "Investment Funds",
      "Fund flows, performance attribution, and fund manager behavior in the Brazilian market."),
     ("🌐", "Macrofinance",
@@ -151,10 +155,6 @@ areas = [
      "Systematic trading strategies, portfolio optimization, pairs trading, and machine learning in finance."),
     ("📊", "Volatility Modeling",
      "Implied volatility surface calibration (SVI framework), realized volatility, and volatility risk premium."),
-    ("🏥", "Health Economics",
-     "Healthcare financing and sustainability, distributive equity, cost analysis, and economic evaluation of public health policies."),
-    ("💻", "Digital Health & Public Policy",
-     "Efficiency of health services, implementation and monitoring of public policies, and the role of information and innovation in healthcare management."),
 ]
 
 col1, col2 = st.columns(2)
@@ -171,14 +171,14 @@ for i, (icon, title, desc) in enumerate(areas):
 st.markdown('<div class="section-label">Active Projects</div>', unsafe_allow_html=True)
 st.markdown('''
 <div class="card">
-    <div class="card-title">Volatility Dynamics in the Brazilian Options Market</div>
+    <div class="card-title">Alternative Finance & ESG in Emerging Markets</div>
     <div class="card-body">
-        Comprehensive research program on implied volatility surfaces, intraday dynamics,
-        and the volatility risk premium in B3 equity options. Uses a proprietary high-frequency
-        options database covering the full B3 option chain.
+        Research on crowdfunding dynamics, fintech, ESG ratings and disclosure, entrepreneurial
+        finance, and emerging topics such as critical minerals governance and algorithmic regulation.
+        Covers geographic persistence of equity CF investments and behavioral determinants of pledging.
     </div>
-    <span class="tag">Options</span><span class="tag">Volatility Surface</span>
-    <span class="tag">SVI</span><span class="tag">B3</span>
+    <span class="tag">Crowdfunding</span><span class="tag">Fintech</span>
+    <span class="tag">ESG</span><span class="tag">Entrepreneurial Finance</span>
 </div>
 <div class="card">
     <div class="card-title">Climate Finance & Sustainable Capital Markets</div>
@@ -190,16 +190,6 @@ st.markdown('''
     <span class="tag">Sustainable Finance</span><span class="tag">Event Study</span>
 </div>
 <div class="card">
-    <div class="card-title">Alternative Finance & ESG in Emerging Markets</div>
-    <div class="card-body">
-        Research on crowdfunding dynamics, fintech, ESG ratings and disclosure, entrepreneurial
-        finance, and emerging topics such as critical minerals governance and algorithmic regulation.
-        Covers geographic persistence of equity CF investments and behavioral determinants of pledging.
-    </div>
-    <span class="tag">Crowdfunding</span><span class="tag">Fintech</span>
-    <span class="tag">ESG</span><span class="tag">Entrepreneurial Finance</span>
-</div>
-<div class="card">
     <div class="card-title">Health Financing & Public Policy Evaluation</div>
     <div class="card-body">
         Empirical research on SUS financing, distributive equity in municipal health spending,
@@ -208,6 +198,16 @@ st.markdown('''
     </div>
     <span class="tag">Health Economics</span><span class="tag">SUS</span>
     <span class="tag">Public Policy</span><span class="tag">Equity</span>
+</div>
+<div class="card">
+    <div class="card-title">Volatility Dynamics in the Brazilian Options Market</div>
+    <div class="card-body">
+        Comprehensive research program on implied volatility surfaces, intraday dynamics,
+        and the volatility risk premium in B3 equity options. Uses a proprietary high-frequency
+        options database covering the full B3 option chain.
+    </div>
+    <span class="tag">Options</span><span class="tag">Volatility Surface</span>
+    <span class="tag">SVI</span><span class="tag">B3</span>
 </div>
 ''', unsafe_allow_html=True)
 
@@ -224,14 +224,14 @@ st.markdown('''
 ''', unsafe_allow_html=True)
 
 infra = [
-    ("🐧", "Linux", "Ubuntu-based research server"),
-    ("🐍", "Python Stack", "NumPy · Pandas · statsmodels · arch · scipy"),
-    ("⚙️", "C++ Stack", "High-performance data processing for large-scale tick data"),
-    ("📉", "MetaTrader 5", "MT5 for live market data and order execution"),
-    ("📡", "LSEG (Refinitiv)", "Institutional market data via Eikon/Workspace"),
     ("🗃️", "B3 Options Database", "Proprietary intraday options data — full B3 chain"),
-    ("📐", "SVI Framework", "Custom SVI calibration with asymmetric liquidity weights"),
+    ("⚙️", "C++ Stack", "High-performance data processing for large-scale tick data"),
+    ("📡", "LSEG (Refinitiv)", "Institutional market data via Eikon/Workspace"),
+    ("🐧", "Linux", "Ubuntu-based research server"),
+    ("📉", "MetaTrader 5", "MT5 for live market data and order execution"),
+    ("🐍", "Python Stack", "NumPy · Pandas · statsmodels · arch · scipy"),
     ("🌐", "Streamlit", "Interactive dashboards and research apps"),
+    ("📐", "SVI Framework", "Custom SVI calibration with asymmetric liquidity weights"),
 ]
 cols = st.columns(3)
 for i, (icon, name, desc) in enumerate(infra):
