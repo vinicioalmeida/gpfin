@@ -259,6 +259,15 @@ st.markdown('''
 st.markdown('<div class="section-label">Seminars & Academic Activities</div>', unsafe_allow_html=True)
 st.markdown('''
 <div class="card">
+    <div class="card-title">🎓 Seminário de Finanças PPGA — 2nd Edition</div>
+    <div class="card-meta">November 2026 · PPGA/UFRN · Date TBC</div>
+    <div class="card-body">
+        Research presentation by a GPFin affiliated student or faculty member.
+        Date and presenter to be confirmed.
+    </div>
+    <span class="tag">Upcoming</span>
+</div>
+<div class="card">
     <div class="card-title">🎓 Seminário de Finanças PPGA — Inaugural Edition</div>
     <div class="card-meta">October 15, 2026 · PPGA/UFRN</div>
     <div class="card-body">
@@ -270,9 +279,9 @@ st.markdown('''
     </div>
     <span class="tag">Research Agendas</span><span class="tag">Inaugural Session</span>
 </div>
-<div class="card" style="border-left:3px solid #b8973a;">
+<div class="card">
     <div class="card-title">📋 EnANPAD 2026 — Divisional Activity</div>
-    <div class="card-meta">Finance Division · 2026</div>
+    <div class="card-meta">September 25, 2026 · Finance Division · EnANPAD 2026</div>
     <div class="card-body">
         <em>Building Quantitative Trading Strategies with AI: A Hands-On Workshop
         for Researchers and Graduate Students</em><br>
@@ -286,17 +295,19 @@ st.markdown('''
 st.markdown('<div class="section-label">Team</div>', unsafe_allow_html=True)
 
 faculty = [
-    ("Anderson Luiz Rezende Mól", "UFRN"),
-    ("Israel José dos Santos Felipe", "UFRN"),
-    ("Raimundo Marciano de Freitas Neto", "UFRN"),
-    ("Robson Góes de Carvalho", "UPE"),
-    ("Vinicio de Souza e Almeida", "UFRN · Coordinator"),
+    ("Vinicio de Souza e Almeida", "UFRN · Coordinator", "https://vinicioalmeida.com", "vinicioalmeida.com"),
+    ("Anderson Luiz Rezende Mól", "UFRN", "https://sigaa.ufrn.br/sigaa/public/docente/portal.jsf?siape=1543333", "SIGAA/UFRN"),
+    ("Israel José dos Santos Felipe", "UFRN", "https://www.linkedin.com/in/israel-felipe-89252730/", "LinkedIn"),
+    ("Raimundo Marciano de Freitas Neto", "UFRN", "https://sigaa.ufrn.br/sigaa/public/docente/portal.jsf?siape=4966048", "SIGAA/UFRN"),
+    ("Robson Góes de Carvalho", "UPE", "https://www.linkedin.com/in/robson-g%C3%B3es-de-carvalho-9113b8180/", "LinkedIn"),
 ]
-for name, inst in faculty:
+for name, inst, url, label in faculty:
+    link_html = f'<a href="{url}" target="_blank" style="font-size:0.78rem; color:#1a3550; text-decoration:none; border-bottom:1px solid #b8973a;">{label} ↗</a>' if url else ''
     st.markdown(f'''
     <div class="card" style="padding:0.6rem 1rem; margin-bottom:0.4rem;">
         <div style="font-size:0.88rem; font-weight:600; color:#0d1b2a;">{name}</div>
         <div style="font-size:0.8rem; color:#6b7280;">{inst}</div>
+        {link_html}
     </div>
     ''', unsafe_allow_html=True)
 
