@@ -148,11 +148,15 @@ areas = [
     ("🏦", "Investment Funds",
      "Fund flows, performance attribution, and fund manager behavior in the Brazilian market."),
     ("🌐", "Macrofinance",
-     "Interactions between macroeconomic variables, monetary policy, and financial markets."),
+     "Shock propagation, downside volatility networks, exchange rate pass-through, and macrofinancial instability across emerging and developed markets."),
     ("📈", "Options Markets",
      "Pricing models, trading strategies, and market microstructure in Brazilian equity options (B3)."),
+    ("🏛️", "Political Economy & Governance",
+     "Political connections and corporate finance, state capacities, governance quality, public audit, and the role of institutions in resource allocation and economic performance."),
     ("🤖", "Quantitative Investing",
      "Systematic trading strategies, portfolio optimization, pairs trading, and machine learning in finance."),
+    ("🗺️", "Regional Development & Economic Complexity",
+     "Productive structures, territorial dynamics, subnational fiscal multipliers, regional diversification, and growth traps in the Brazilian economy."),
     ("📊", "Volatility Modeling",
      "Implied volatility surface calibration (SVI framework), realized volatility, and volatility risk premium."),
 ]
@@ -198,6 +202,37 @@ st.markdown('''
     </div>
     <span class="tag">Health Economics</span><span class="tag">SUS</span>
     <span class="tag">Public Policy</span><span class="tag">Equity</span>
+</div>
+<div class="card">
+    <div class="card-title">Macrofinancial Instability & Cross-Border Transmission</div>
+    <div class="card-body">
+        Research on shock propagation across currencies and financial markets, exchange rate
+        pass-through to domestic prices, downside volatility networks, and the macroeconomic
+        effects of fiscal composition and financial constraints on growth dynamics.
+    </div>
+    <span class="tag">Macrofinance</span><span class="tag">Exchange Rate</span>
+    <span class="tag">Inflation</span><span class="tag">Fiscal Policy</span>
+</div>
+<div class="card">
+    <div class="card-title">Regional Development, Productive Structures & Territorial Dynamics</div>
+    <div class="card-body">
+        Investigates why regions with different productive structures and institutional conditions
+        follow distinct growth trajectories. Topics include regional diversification, subnational
+        fiscal multipliers, productive enclaves, and socioeconomic traps in the Brazilian territory.
+    </div>
+    <span class="tag">Regional Economics</span><span class="tag">Productive Complexity</span>
+    <span class="tag">Fiscal Multipliers</span><span class="tag">Brazil</span>
+</div>
+<div class="card">
+    <div class="card-title">State Capacities, Governance & Political Economy</div>
+    <div class="card-body">
+        Examines how institutional capacities, governance structures, and political connections
+        shape state action, corporate finance decisions, and economic performance. Covers
+        public audit quality, political connections in capital structure, and governance
+        reform in emerging markets.
+    </div>
+    <span class="tag">Governance</span><span class="tag">Political Economy</span>
+    <span class="tag">Corporate Finance</span><span class="tag">Institutions</span>
 </div>
 <div class="card">
     <div class="card-title">Volatility Dynamics in the Brazilian Options Market</div>
@@ -304,7 +339,7 @@ st.markdown('''
     <span class="tag">Research Agendas</span><span class="tag">Inaugural Session</span>
     <div style="margin-top:0.6rem;">
         <span style="font-size:0.78rem; color:#6b7280;">Slides: </span>
-        <a href="#" style="font-size:0.78rem; color:#1a3550; text-decoration:none; border-bottom:1px solid #b8973a;">Anderson Mól ↓</a>
+        <a href="https://raw.githubusercontent.com/vinicioalmeida/gpfin/main/eventosdocs/2026/AgendaPesquisaAnderson.pdf" target="_blank" style="font-size:0.78rem; color:#1a3550; text-decoration:none; border-bottom:1px solid #b8973a;">Anderson Mól ↓</a>
         &nbsp;·&nbsp;
         <a href="https://raw.githubusercontent.com/vinicioalmeida/gpfin/main/eventosdocs/2026/AgendaPesquisaIsrael.pdf" target="_blank" style="font-size:0.78rem; color:#1a3550; text-decoration:none; border-bottom:1px solid #b8973a;">Israel Felipe ↓</a>
         &nbsp;·&nbsp;
