@@ -110,7 +110,8 @@ st.markdown("""
     <strong>Graduate School of Business (PPGA)</strong> of the
     Federal University of Rio Grande do Norte (UFRN), Brazil.
     The group conducts empirical and quantitative research on capital markets,
-    derivatives, volatility, and sustainable finance, with a focus on
+    derivatives, volatility, macrofinance, corporate finance, alternative finance,
+    and sustainable finance, with a focus on
     the Brazilian market and its connections to international financial systems.
     GPFin is registered at the
     <a href="http://dgp.cnpq.br/dgp/espelhogrupo/2623" target="_blank">CNPq Directory of Research Groups</a>.
@@ -132,18 +133,24 @@ st.markdown(f'''
 st.markdown('<div class="section-label">Research Areas</div>', unsafe_allow_html=True)
 
 areas = [
-    ("📈", "Derivatives & Options",
-     "Pricing models, options strategies, and market microstructure in Brazilian equity options (B3)."),
-    ("📊", "Volatility Modeling",
-     "Implied volatility surface calibration (SVI framework), realized volatility, and volatility risk premium."),
-    ("🤖", "Quantitative Investing",
-     "Systematic trading strategies, portfolio optimization, pairs trading, and machine learning in finance."),
+    ("🔀", "Alternative Finance",
+     "Non-traditional financing instruments, fintech, structured products, and alternative investment strategies."),
+    ("🏢", "Corporate Finance",
+     "Capital structure, corporate governance, M&A, and firm valuation in emerging markets."),
+    ("💹", "Equity Markets",
+     "IPOs, analyst recommendations, corporate governance effects on returns, and equity market dynamics in Brazil."),
     ("🌱", "ESG & Sustainable Finance",
      "Green bonds, sustainable corporate governance, and ESG factor pricing in emerging markets."),
-    ("💹", "Asset Pricing",
-     "Equity pricing, analyst recommendations, IPOs, and corporate governance effects on returns."),
     ("🏦", "Investment Funds",
      "Fund flows, performance attribution, and fund manager behavior in the Brazilian market."),
+    ("🌐", "Macrofinance",
+     "Interactions between macroeconomic variables, monetary policy, and financial markets."),
+    ("📈", "Options Markets",
+     "Pricing models, trading strategies, and market microstructure in Brazilian equity options (B3)."),
+    ("🤖", "Quantitative Investing",
+     "Systematic trading strategies, portfolio optimization, pairs trading, and machine learning in finance."),
+    ("📊", "Volatility Modeling",
+     "Implied volatility surface calibration (SVI framework), realized volatility, and volatility risk premium."),
 ]
 
 col1, col2 = st.columns(2)
