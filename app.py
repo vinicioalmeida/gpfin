@@ -1,6 +1,5 @@
 import streamlit as st
 
-# ── Page config ───────────────────────────────────────────────────────────────
 st.set_page_config(
     page_title="GPFin — Finance Research Lab",
     page_icon="🔬",
@@ -8,13 +7,22 @@ st.set_page_config(
     initial_sidebar_state="collapsed",
 )
 
-# ── Shared CSS ────────────────────────────────────────────────────────────────
 st.markdown("""
 <style>
 @import url('https://fonts.googleapis.com/css2?family=Lora:wght@400;600&family=Inter:wght@400;500;600&display=swap');
 
-html, body, [class*="css"] { font-family: 'Inter', sans-serif; }
-
+html, body, [data-testid="stAppViewContainer"], [data-testid="stMain"] {
+    background-color: #faf9f7 !important;
+}
+html, body, [class*="css"] {
+    font-family: 'Inter', sans-serif;
+    color: #1a1a2e;
+}
+.main .block-container {
+    padding-top: 2rem;
+    padding-bottom: 3rem;
+    max-width: 860px;
+}
 .page-title {
     font-family: 'Lora', serif;
     font-size: 2rem;
@@ -95,7 +103,7 @@ st.markdown('''
 </div>
 ''', unsafe_allow_html=True)
 
-# ── Institutional text ────────────────────────────────────────────────────────
+# ── Institutional text ─────────────────────────────────────────────────────────
 st.markdown("""
 <div style="font-size:0.95rem; color:#3d4255; line-height:1.8; margin-bottom:1.5rem;">
     GPFin is a research group in Finance hosted at the
@@ -109,7 +117,7 @@ st.markdown("""
 </div>
 """, unsafe_allow_html=True)
 
-# ── Lab photo ─────────────────────────────────────────────────────────────────
+# ── Lab photo ──────────────────────────────────────────────────────────────────
 st.markdown(f'''
 <div style="margin-bottom:1.5rem;">
     <img src="data:image/png;base64,{LAB_B64}"
@@ -150,7 +158,6 @@ for i, (icon, title, desc) in enumerate(areas):
 
 # ── Active Projects ────────────────────────────────────────────────────────────
 st.markdown('<div class="section-label">Active Projects</div>', unsafe_allow_html=True)
-
 st.markdown('''
 <div class="card">
     <div class="card-title">Volatility Dynamics in the Brazilian Options Market</div>
@@ -159,10 +166,8 @@ st.markdown('''
         and the volatility risk premium in B3 equity options. Uses a proprietary high-frequency
         options database covering the full B3 option chain.
     </div>
-    <span class="tag">Options</span>
-    <span class="tag">Volatility Surface</span>
-    <span class="tag">SVI</span>
-    <span class="tag">B3</span>
+    <span class="tag">Options</span><span class="tag">Volatility Surface</span>
+    <span class="tag">SVI</span><span class="tag">B3</span>
 </div>
 <div class="card">
     <div class="card-title">Climate Finance & Sustainable Capital Markets</div>
@@ -170,16 +175,13 @@ st.markdown('''
         Research on green bond pricing, market reactions to ESG disclosures, and the
         relationship between sustainability indicators and asset returns in the Brazilian market.
     </div>
-    <span class="tag">Green Bonds</span>
-    <span class="tag">ESG</span>
-    <span class="tag">Sustainable Finance</span>
-    <span class="tag">Event Study</span>
+    <span class="tag">Green Bonds</span><span class="tag">ESG</span>
+    <span class="tag">Sustainable Finance</span><span class="tag">Event Study</span>
 </div>
 ''', unsafe_allow_html=True)
 
 # ── Research Infrastructure ────────────────────────────────────────────────────
 st.markdown('<div class="section-label">Research Infrastructure & Data Resources</div>', unsafe_allow_html=True)
-
 st.markdown('''
 <div class="card" style="margin-bottom:1.2rem;">
     <div class="card-body">
@@ -199,7 +201,6 @@ infra = [
     ("📐", "SVI Framework", "Custom SVI calibration with asymmetric liquidity weights"),
     ("🌐", "Streamlit", "Interactive dashboards and research apps"),
 ]
-
 cols = st.columns(3)
 for i, (icon, name, desc) in enumerate(infra):
     with cols[i % 3]:
@@ -211,21 +212,8 @@ for i, (icon, name, desc) in enumerate(infra):
         </div>
         ''', unsafe_allow_html=True)
 
-st.markdown('''
-<div style="margin-top:0.5rem;">
-    <span class="tag">Python</span>
-    <span class="tag">Linux</span>
-    <span class="tag">SVI Calibration</span>
-    <span class="tag">Intraday Options Data</span>
-    <span class="tag">MT5</span>
-    <span class="tag">LSEG</span>
-    <span class="tag">Streamlit</span>
-</div>
-''', unsafe_allow_html=True)
-
 # ── B3 Options Database ────────────────────────────────────────────────────────
 st.markdown('<div class="section-label">Brazilian Options Market Database (B3)</div>', unsafe_allow_html=True)
-
 st.markdown('''
 <div class="card">
     <div class="card-body">
@@ -245,7 +233,6 @@ st.markdown('''
 
 # ── Student Training ───────────────────────────────────────────────────────────
 st.markdown('<div class="section-label">Student Training & Quantitative Competitions</div>', unsafe_allow_html=True)
-
 st.markdown('''
 <div class="card">
     <div class="card-body">
@@ -262,7 +249,6 @@ st.markdown('''
 
 # ── Seminars ──────────────────────────────────────────────────────────────────
 st.markdown('<div class="section-label">Seminars & Academic Activities</div>', unsafe_allow_html=True)
-
 st.markdown('''
 <div class="card">
     <div class="card-title">🎓 Seminário de Finanças PPGA — Inaugural Edition</div>
@@ -274,12 +260,8 @@ st.markdown('''
         sustainable finance, and investment funds. Organized by GPFin as a
         recurring forum for academic exchange within and beyond UFRN.
     </div>
-    <span class="tag">Research Agendas</span>
-    <span class="tag">Inaugural Session</span>
+    <span class="tag">Research Agendas</span><span class="tag">Inaugural Session</span>
 </div>
-''', unsafe_allow_html=True)
-
-st.markdown('''
 <div class="card" style="border-left:3px solid #b8973a;">
     <div class="card-title">📋 EnANPAD 2026 — Divisional Activity</div>
     <div class="card-meta">Finance Division · 2026</div>
@@ -288,43 +270,25 @@ st.markdown('''
         for Researchers and Graduate Students</em><br>
         Presented by Vinicio Almeida · Finance Division, EnANPAD 2026
     </div>
-    <span class="tag">Quantitative Trading</span>
-    <span class="tag">AI</span>
-    <span class="tag">Workshop</span>
+    <span class="tag">Quantitative Trading</span><span class="tag">AI</span><span class="tag">Workshop</span>
 </div>
 ''', unsafe_allow_html=True)
 
 # ── Team ──────────────────────────────────────────────────────────────────────
 st.markdown('<div class="section-label">Team</div>', unsafe_allow_html=True)
 
-st.markdown('''
-<div class="card">
-    <div class="card-title">Vinicio Almeida</div>
-    <div class="card-meta">Founding Director · Finance Research Lab (GPFin)</div>
-    <div class="card-body">
-        Full Professor of Finance · DEPAD/PPGA · UFRN<br>
-        Ph.D. Coppead/UFRJ · CVM-certified Portfolio Manager<br>
-        Research in derivatives, volatility, quantitative investing, and sustainable finance.
-    </div>
-    <a href="https://vinicioalmeida.streamlit.app" target="_blank" style="font-size:0.8rem;">Personal site ↗</a>
-</div>
-''', unsafe_allow_html=True)
-
-st.markdown('<div class="card-meta" style="margin:0.8rem 0 0.4rem 0; font-weight:600; color:#0d1b2a;">Faculty</div>', unsafe_allow_html=True)
-
 faculty = [
-    ("Anderson Luiz Rezende Mól", "UFRN", ""),
-    ("Israel José dos Santos Felipe", "UFRN", ""),
-    ("Raimundo Marciano de Freitas Neto", "UFRN", ""),
-    ("Robson Góes de Carvalho", "UPE", ""),
+    ("Anderson Luiz Rezende Mól", "UFRN"),
+    ("Israel José dos Santos Felipe", "UFRN"),
+    ("Raimundo Marciano de Freitas Neto", "UFRN"),
+    ("Robson Góes de Carvalho", "UPE"),
+    ("Vinicio de Souza e Almeida", "UFRN · Coordinator"),
 ]
-
-for name, inst, note in faculty:
-    extra = f" · {note}" if note else ""
+for name, inst in faculty:
     st.markdown(f'''
     <div class="card" style="padding:0.6rem 1rem; margin-bottom:0.4rem;">
         <div style="font-size:0.88rem; font-weight:600; color:#0d1b2a;">{name}</div>
-        <div style="font-size:0.8rem; color:#6b7280;">{inst}{extra}</div>
+        <div style="font-size:0.8rem; color:#6b7280;">{inst}</div>
     </div>
     ''', unsafe_allow_html=True)
 
@@ -355,7 +319,6 @@ papers = [
      ["Fund Flows", "Asset Allocation", "Panel Data"],
      "https://papers.ssrn.com/sol3/papers.cfm?abstract_id=6831429"),
 ]
-
 for title, authors, desc, tags, url in papers:
     tag_html = " ".join(f'<span class="tag">{t}</span>' for t in tags)
     st.markdown(f'''
@@ -431,8 +394,7 @@ st.markdown('<div class="section-label">Institutional Affiliations</div>', unsaf
 st.markdown(f'''
 <div class="card">
     <div style="display:flex; align-items:center; gap:1rem;">
-        <img src="data:image/png;base64,{LOGO_B64}"
-             style="height:52px; width:auto;">
+        <img src="data:image/png;base64,{LOGO_B64}" style="height:52px; width:auto;">
         <div>
             <div style="font-weight:600; color:#0d1b2a;">Universidade Federal do Rio Grande do Norte</div>
             <div style="font-size:0.85rem; color:#6b7280;">Programa de Pós-Graduação em Administração (PPGA)</div>
