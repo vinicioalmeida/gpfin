@@ -202,6 +202,7 @@ st.markdown('''
 infra = [
     ("🐧", "Linux", "Ubuntu-based research server"),
     ("🐍", "Python Stack", "NumPy · Pandas · statsmodels · arch · scipy"),
+    ("⚙️", "C++ Stack", "High-performance data processing for large-scale tick data"),
     ("📉", "MetaTrader 5", "MT5 for live market data and order execution"),
     ("📡", "LSEG (Refinitiv)", "Institutional market data via Eikon/Workspace"),
     ("🗃️", "B3 Options Database", "Proprietary intraday options data — full B3 chain"),
