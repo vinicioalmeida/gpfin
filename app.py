@@ -315,7 +315,7 @@ st.markdown('''
     <div class="card-title">🎓 Seminário de Finanças PPGA — 2nd Edition</div>
     <div class="card-meta">November 19, 2026 · PPGA/UFRN</div>
     <div class="card-body">
-        <em>When the Network Moves the Currency</em><br>
+        <em>When the Network Moves the Currency: Bad Volatility Spillovers and Exchange Rate Pass-Through in Emerging Markets</em><br>
         Presented by Anderson Mól · PPGA/UFRN
     </div>
     <span class="tag">Second Session</span><span class="tag">Macrofinance</span>
