@@ -313,12 +313,16 @@ st.markdown('<div class="section-label">Seminars & Academic Activities</div>', u
 st.markdown('''
 <div class="card">
     <div class="card-title">🎓 Seminário de Finanças PPGA — 2nd Edition</div>
-    <div class="card-meta">November 2026 · PPGA/UFRN · Date TBC</div>
+    <div class="card-meta">November 19, 2026 · PPGA/UFRN</div>
     <div class="card-body">
-        Research presentation by a GPFin affiliated student or faculty member.
-        Date and presenter to be confirmed.
+        <em>When the Network Moves the Currency</em><br>
+        Presented by Anderson Mól · PPGA/UFRN
     </div>
-    <span class="tag">Upcoming</span>
+    <span class="tag">Second Session</span><span class="tag">Macrofinance</span>
+    <div style="margin-top:0.6rem;">
+        <span style="font-size:0.78rem; color:#6b7280;">Slides: </span>
+        <a href="https://raw.githubusercontent.com/vinicioalmeida/gpfin/main/eventosdocs/2026-2/MOL%20When%20the%20Network%20Moves%20the%20Currency.pdf" target="_blank" style="font-size:0.78rem; color:#1a3550; text-decoration:none; border-bottom:1px solid #b8973a;">Anderson Mól ↓</a>
+    </div>
 </div>
 <div class="card">
     <div class="card-title">🎓 Seminário de Finanças PPGA — Inaugural Edition</div>
